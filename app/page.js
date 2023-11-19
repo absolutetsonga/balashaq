@@ -1,6 +1,8 @@
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import Treatments from "./components/Treatments";
+import About from "./components/About";
+import Choose from "./components/Choose";
 
 export default function Home() {
   return (
@@ -10,6 +12,8 @@ export default function Home() {
         <div className="flex flex-col gap-20">
           <Hero />
           <Treatments />
+          <About />
+          <Choose/>
         </div>
       </div>
     </main>

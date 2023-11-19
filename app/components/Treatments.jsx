@@ -17,7 +17,7 @@ const TreatmentCard = ({ index, name, description, image }) => (
       <p className="mb-5 text-base z-10">{description}</p>
       <button
         type="button"
-        className="bg-white font-medium rounded-2xl text-sm px-5 py-2.5 text-center z-10 transition duration-300 ease-in-out hover:bg-blue-400 hover:text-white hover:shadow-lg"
+        className="bg-white font-medium rounded-2xl text-sm px-5 py-2.5 text-center z-10 transition duration-300 ease-in-out hover:bg-[#89DB7B] hover:shadow-lg"
       >
         Read More
       </button>
