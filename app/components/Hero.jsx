@@ -14,8 +14,14 @@ const Hero = () => {
 
           <div className="flex flex-row items-center relative">
             <Link href={"#book"} className="z-20">
-              <button className="text-[20px] font-semibold px-[60px] py-[20px] bg-[#89DB7B] rounded-3xl">
-                Booking Now
+              <button className="flex flex-row items-center justify-center gap-4 text-[20px] font-semibold px-[60px] py-[20px] bg-[#89DB7B] rounded-3xl">
+                <p>Booking Now</p>
+                <Image
+                  src={"arrow.svg"}
+                  alt="arrow-button"
+                  width={15}
+                  height={15}
+                />
               </button>
             </Link>
 
@@ -38,7 +44,7 @@ const Hero = () => {
         />
       </div>
 
-      <Features/>
+      <Features />
     </div>
   );
 };

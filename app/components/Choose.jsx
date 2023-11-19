@@ -17,6 +17,9 @@ const Choose = () => {
 
       <div className="w-full md:w-1/2 p-8">
         <div className="flex flex-col gap-8 max-w-md mx-auto">
+          <p className="text-[20px] text-[#89DB7B] font-semibold">
+            Why Choose Us
+          </p>
           <h2 className="text-4xl font-bold">Comprehensive Dental Services</h2>
           <div className="">
             <ul className="flex flex-col gap-2">

@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Treatments from "./components/Treatments";
 import About from "./components/About";
 import Choose from "./components/Choose";
+import Form from "./components/Form";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
           <Treatments />
           <About />
           <Choose/>
+          <Form/>
         </div>
       </div>
     </main>

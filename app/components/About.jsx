@@ -18,6 +18,9 @@ const About = () => {
       <div className="w-full md:w-1/2 p-8">
         <div className="flex flex-col gap-10 max-w-md mx-auto">
           <div className="flex flex-col gap-8">
+            <p className="text-[20px] text-[#89DB7B] font-semibold">
+              About Us
+            </p>
             <h2 className="text-4xl font-bold">Patient-Centered Care</h2>
             <p className="text-lg">
               Наша программа, создана для заботливых родителей, которые
