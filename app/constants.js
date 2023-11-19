@@ -20,11 +20,37 @@ export const features = [
     subtitle:
       "Наша программа предлагает персонализированные планы развития, учитывая потребности каждого малыша.",
   },
-//   {
-//     imgSrc: "/environment.svg",
-//     imgAlt: "analyze",
-//     title: "Создание Сообщества Заботы",
-//     subtitle:
-//       "Сообщество где можно делиться опытом, получать советы и создавать поддерживающую обстановку.",
-//   },
+];
+
+export const services = [
+  {
+    name: "Teeth Whitening",
+    description: "Cosmetic treatment to enhance the whiteness of teeth",
+    image: "/treatments/treatment-card-1.svg",
+  },
+  {
+    name: "Dental Implant",
+    description: "Surgical placement of artificial tooth roots",
+    image: "/treatments/treatment-card-2.svg",
+  },
+  {
+    name: "Teeth Whitening",
+    description: "Cosmetic treatment to enhance the whiteness of teeth",
+    image: "/treatments/treatment-card-1.svg",
+  },
+  {
+    name: "Teeth Whitening",
+    description: "Cosmetic treatment to enhance the whiteness of teeth",
+    image: "/treatments/treatment-card-1.svg",
+  },
+  {
+    name: "Teeth Whitening",
+    description: "Cosmetic treatment to enhance the whiteness of teeth",
+    image: "/treatments/treatment-card-1.svg",
+  },
+  {
+    name: "Teeth Whitening",
+    description: "Cosmetic treatment to enhance the whiteness of teeth",
+    image: "/treatments/treatment-card-1.svg",
+  },
 ];

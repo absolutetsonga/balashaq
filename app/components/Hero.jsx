@@ -5,7 +5,7 @@ import Features from "./Features";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col">
       <div className="flex flex-col lg:flex-row items-center">
         <div className="flex flex-col justify-center items-center md:items-stretch md:justify-start w-full gap-8">
           <h1 className="sm:text-[54px] font-bold text-center md:text-start">
