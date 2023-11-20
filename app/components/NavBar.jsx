@@ -6,7 +6,7 @@ const NavBar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className="w-full h-[115px] flex flex-row items-center justify-between font-semibold">
+    <div className="w-full h-20 sm:h-[115px] flex flex-row items-center justify-between font-semibold">
       <h1 className="text-[24px]"> Balashaq </h1>
 
       <ul className="hidden sm:flex flex-row items-center gap-8 text-base sm:text-[20px] cursor-pointer transition-all">
@@ -37,7 +37,7 @@ const NavBar = () => {
           <div
             className={`${
               toggle ? "opacity-100" : "opacity-0 pointer-events-none"
-            } sm:hidden absolute flex flex-col gap-2 top-20 -right-6 bg-slate-100 px-4 py-6 rounded-xl z-30`}
+            } sm:hidden absolute flex flex-col gap-2 top-14 right-0 bg-slate-100 px-4 py-6 rounded-xl z-30`}
           >
             <Link href="#main" className="hover:text-[#5ab949]">
               Main

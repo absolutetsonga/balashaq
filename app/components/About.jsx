@@ -5,17 +5,20 @@ import Button from "./Button";
 const About = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row-reverse" id="about-us">
-      <div className="w-full md:w-1/2">
-        <Image
-          src="/about-bg-1.svg"
-          alt="Dentist with Patient"
-          width={540}
-          height={711}
-          className="mx-auto w-full sm:max-w-[540px] sm:max-h-[700px] md:w-full"
-        />
+      <div className="md:w-1/2">
+        <div className="mx-auto sm:max-w-[540px] sm:max-h-[700px] md:w-full">
+          <Image
+            src="/about-bg-1.svg"
+            alt="Dentist with Patient"
+            layout="responsive"
+            width={540}
+            height={711}
+            className="object-cover"
+          />
+        </div>
       </div>
 
-      <div className="w-full md:w-1/2 p-8">
+      <div className="w-full md:w-1/2 p-4 md:p-8">
         <div className="flex flex-col gap-10 max-w-md mx-auto">
           <div className="flex flex-col gap-8">
             <p className="text-[20px] text-[#89DB7B] font-semibold">О нас</p>

@@ -13,9 +13,9 @@ export default function Home() {
 
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-betwee w-full bg-white text-[#1E1E1E] px-4 sm:px-10">
-      <div className="flex flex-col max-w-[1140px] gap-10">
+      <div className="flex flex-col max-w-[1140px] gap-4 sm:gap-10">
         <NavBar />
-        <div className="flex flex-col gap-20">
+        <div className="flex flex-col gap-10 sm:gap-20">
           <Hero />
           <Treatments />
           <About />

@@ -12,10 +12,10 @@ const Hero = () => {
             Balashaq - Ваш Помощник в Развитии Здоровых Детей
           </h1>
 
-          <div className="flex flex-row items-center relative">
+          <div className="relative">
             <Link href={"#form"} className="z-20">
-              <button className="flex flex-row items-center justify-center gap-4 text-[20px] font-semibold px-[60px] py-[20px] bg-[#89DB7B] rounded-3xl">
-                <p>Зарегистрироваться сейчас</p>
+              <button className="flex flex-row items-center justify-center gap-4 text-[20px] font-semibold px-10 py-4 sm:px-[60px] sm:py-[20px] bg-[#89DB7B] rounded-3xl">
+                <p>Начать сейчас</p>
                 <Image
                   src={"arrow.svg"}
                   alt="arrow-button"
@@ -30,7 +30,7 @@ const Hero = () => {
               alt="hero-decor"
               width={130}
               height={130}
-              className="absolute left-[170px]"
+              className="absolute -right-10 sm:left-[200px] -top-8"
             />
           </div>
         </div>
