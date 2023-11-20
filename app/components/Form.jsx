@@ -4,11 +4,11 @@ import React from "react";
 import Image from "next/image";
 import { useState } from "react";
 
-const Form = () => {
-  const [fullname, setFullname] = useState('');
-  const [number, setNumber] = useState('');
-  const [email, setEmail] = useState('');
-  const [parentType, setParentType] = useState('');
+const Form = ({ setResponse, setClose }) => {
+  const [fullname, setFullname] = useState("");
+  const [number, setNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [parentType, setParentType] = useState("");
 
   const sendForm = async () => {
     try {
@@ -21,19 +21,20 @@ const Form = () => {
       });
 
       const data = await response.json();
+
+      console.log(data);
       if (response.ok) {
-        console.log("Form submitted:", data);
+        setResponse(data.message);
+        setClose(true);
         // Handle successful submission here, like showing a success message
       } else {
-        console.error("Form submission error:", data);
-        // Handle errors here, like showing an error message
+        setResponse(data.message);
+        setClose(true);
       }
     } catch (error) {
       console.error("Form submission exception:", error);
-      // Handle exceptions here, like showing an error message
     }
   };
-
 
   return (
     <div className="p-10">
@@ -103,9 +104,14 @@ const Form = () => {
             <button
               type="button"
               className="bg-[#89DB7B] font-semibold px-8 py-[26px] text-[20px] rounded-full drop-shadow-md shadow-button hover:bg-green-500 transition duration-300 ease-in-out flex items-center justify-center text-center"
-              onClick={() => sendForm({
-                fullname, number, email, parentType
-              })}
+              onClick={() =>
+                sendForm({
+                  fullname,
+                  number,
+                  email,
+                  parentType,
+                })
+              }
             >
               <p className="mr-4">Оставить заявку</p>
               <Image

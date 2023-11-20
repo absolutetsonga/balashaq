@@ -1,4 +1,6 @@
 import { NextResponse } from "next/server";
+import { connectToDb } from "../utils/database";
+import User from "../models/user";
 
 export const POST = async (req, res) => {
   await req;
@@ -15,26 +17,26 @@ export const POST = async (req, res) => {
 
     const { fullname, number, email, parentType } = await json;
 
-    console.log({ fullname, number, email, parentType });
-
     try {
-      // Here you would add your logic to send the data to your database
-      // This is a placeholder for your database logic
-      // For example, if you are using MongoDB:
-      /*
-      await db.collection('forms').insertOne({
-        fullname,
-        number,
-        email,
-        parentType
-      });
-      */
+      await connectToDb();
 
-      // Send a response back to the client
-      return NextResponse.json({ message: "Form data submitted successfully" });
+      const user = await User.create({ fullname, email, number, parentType });
+
+      if (user) {
+        return NextResponse.json({
+          message: "Form data submitted successfully",
+        });
+      } else {
+        return NextResponse.json({
+          message: "Form data was not submitted", user: user
+        });
+      }
     } catch (error) {
       // If there's an error, send a response back with the error message
-      return NextResponse.json({ message: "Error submitting form data", error: error.message });
+      return NextResponse.json({
+        message: "Error submitting form data",
+        error: error.message,
+      });
     }
   } else {
     // If the request method is not POST, return a 405 Method Not Allowed error
