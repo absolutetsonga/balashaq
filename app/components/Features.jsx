@@ -7,7 +7,7 @@ const Features = () => {
       {features.map((feature, index) => {
         return (
           <div
-            className="flex flex-col p-4 rounded-lg shadow-custom bg-white"
+            className="w-full flex flex-col p-4 rounded-lg shadow-custom bg-white"
             key={index}
           >
             <div className="p-3 rounded-full mb-4 lg:self-start">

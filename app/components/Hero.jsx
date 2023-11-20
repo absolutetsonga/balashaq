@@ -13,7 +13,7 @@ const Hero = () => {
           </h1>
 
           <div className="flex flex-row items-center relative">
-            <Link href={"#book"} className="z-20">
+            <Link href={"#form"} className="z-20">
               <button className="flex flex-row items-center justify-center gap-4 text-[20px] font-semibold px-[60px] py-[20px] bg-[#89DB7B] rounded-3xl">
                 <p>Booking Now</p>
                 <Image
@@ -40,7 +40,7 @@ const Hero = () => {
           alt="background-hero"
           width={400}
           height={400}
-          className="lg:mt-40 lg:mr-10 max-w-[400px] max-h-[400px]"
+          className="lg:mt-40 lg:mr-10 w-full sm:max-w-[400px] sm:max-h-[400px]"
         />
       </div>
 

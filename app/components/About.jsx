@@ -11,7 +11,7 @@ const About = () => {
           alt="Dentist with Patient"
           width={540}
           height={711}
-          className="mx-auto max-w-[540px] max-h-[700px] md:w-full md:h-full"
+          className="mx-auto w-full sm:max-w-[540px] sm:max-h-[700px] md:w-full md:h-full"
         />
       </div>
 

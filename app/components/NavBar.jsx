@@ -9,7 +9,7 @@ const NavBar = () => {
     <div className="w-full h-[115px] flex flex-row items-center justify-between font-semibold">
       <h1 className="text-[24px]"> Balashaq </h1>
 
-      <ul className="hidden sm:flex flex-row items-center gap-8 text-[20px] cursor-pointer transition-all">
+      <ul className="hidden sm:flex flex-row items-center gap-8 text-base sm:text-[20px] cursor-pointer transition-all">
         <Link href="#main" className="hover:text-[#5ab949]">
           Main
         </Link>
@@ -21,9 +21,11 @@ const NavBar = () => {
         </Link>
       </ul>
 
-      <button className="px-4 py-3 border-[2px] border-[#89DB7B] rounded-3xl">
-        Оставить заявку
-      </button>
+      <Link href="#form">
+        <button className="px-2 py-2 sm:px-4 sm:py-3 border-[2px] border-[#89DB7B] rounded-3xl">
+          Оставить заявку
+        </button>
+      </Link>
 
       <div
         className="relative flex sm:hidden"
@@ -35,7 +37,7 @@ const NavBar = () => {
           <div
             className={`${
               toggle ? "opacity-100" : "opacity-0 pointer-events-none"
-            } sm:hidden absolute flex flex-col gap-2 top-20 -right-6 bg-slate-100 px-4 py-6 rounded-xl`}
+            } sm:hidden absolute flex flex-col gap-2 top-20 -right-6 bg-slate-100 px-4 py-6 rounded-xl z-30`}
           >
             <Link href="#main" className="hover:text-[#5ab949]">
               Main

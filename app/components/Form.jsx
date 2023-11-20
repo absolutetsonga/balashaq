@@ -37,7 +37,7 @@ const Form = ({ setResponse, setClose }) => {
   };
 
   return (
-    <div className="p-10">
+    <div className="p-4 sm:p-10" id="form">
       <div className="flex flex-col md:flex-row bg-white rounded-[53px] shadow-custom overflow-hidden">
         <div className="md:w-1/2">
           <Image
@@ -50,7 +50,7 @@ const Form = ({ setResponse, setClose }) => {
         </div>
 
         {/* Form Section */}
-        <div className="flex flex-col items-center justify-center md:w-1/2 p-8 gap-[53px]">
+        <div className="flex flex-col items-center justify-center md:w-1/2 p-4 sm:p-8 gap-[53px]">
           <h2 className="text-[36px] font-bold text-gray-800 mb-6">
             Оставить заявку
           </h2>
