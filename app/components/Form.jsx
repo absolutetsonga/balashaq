@@ -12,7 +12,7 @@ const Form = () => {
 
   const sendForm = async () => {
     try {
-      const response = await fetch("/api/form", {
+      const response = await fetch("/api", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
