@@ -1,6 +1,6 @@
-import React from 'react'
-import Image from 'next/image';
-import Button from './Button';
+import React from "react";
+import Image from "next/image";
+import Button from "./Button";
 
 const About = () => {
   return (
@@ -11,17 +11,17 @@ const About = () => {
           alt="Dentist with Patient"
           width={540}
           height={711}
-          className="mx-auto w-full sm:max-w-[540px] sm:max-h-[700px] md:w-full md:h-full"
+          className="mx-auto w-full sm:max-w-[540px] sm:max-h-[700px] md:w-full"
         />
       </div>
 
       <div className="w-full md:w-1/2 p-8">
         <div className="flex flex-col gap-10 max-w-md mx-auto">
           <div className="flex flex-col gap-8">
-            <p className="text-[20px] text-[#89DB7B] font-semibold">
-              About Us
-            </p>
-            <h2 className="text-4xl font-bold">Patient-Centered Care</h2>
+            <p className="text-[20px] text-[#89DB7B] font-semibold">О нас</p>
+            <h2 className="text-4xl font-bold">
+              Уход, ориентированный на пациента
+            </h2>
             <p className="text-lg">
               Наша программа, создана для заботливых родителей, которые
               стремятся обеспечить здоровое и гармоничное развитие своих детей.
@@ -44,6 +44,6 @@ const About = () => {
       </div>
     </div>
   );
-}
+};
 
-export default About
+export default About;

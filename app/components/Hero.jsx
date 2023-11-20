@@ -8,14 +8,14 @@ const Hero = () => {
     <div className="flex flex-col" id="main">
       <div className="flex flex-col lg:flex-row items-center">
         <div className="flex flex-col justify-center items-center md:items-stretch md:justify-start w-full gap-8">
-          <h1 className="sm:text-[54px] font-bold text-center md:text-start">
+          <h1 className="text-[42px] sm:text-[54px] font-bold text-center md:text-start">
             Balashaq - Ваш Помощник в Развитии Здоровых Детей
           </h1>
 
           <div className="flex flex-row items-center relative">
             <Link href={"#form"} className="z-20">
               <button className="flex flex-row items-center justify-center gap-4 text-[20px] font-semibold px-[60px] py-[20px] bg-[#89DB7B] rounded-3xl">
-                <p>Booking Now</p>
+                <p>Зарегистрироваться сейчас</p>
                 <Image
                   src={"arrow.svg"}
                   alt="arrow-button"

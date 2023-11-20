@@ -2,9 +2,11 @@ import React from "react";
 import Image from "next/image";
 import { services } from "../constants";
 
-const TreatmentCard = ({ index, name, description, image }) => (
+const TreatmentCard = ({ index, name, description, image }) => {
+  console.log({name, index});
+  return (
   <div
-    className={`w-full relative p-4 max-w-sm bg-white rounded-lg border shadow-md sm:p-8 text-[#1E1E1E] ${
+    className={`w-full relative p-4 max-w-sm rounded-lg border shadow-md sm:p-8 text-[#1E1E1E] ${
       index === 0 || index === 5
         ? "bg-[#FEF0C3]"
         : index === 1 || index === 3
@@ -12,9 +14,12 @@ const TreatmentCard = ({ index, name, description, image }) => (
         : "bg-[#DFF7EA]"
     }`}
   >
-    <div className="w-1/2">
-      <h5 className="mb-4 text-[32px] leading-[36px] font-medium">{name}</h5>
-      <p className="mb-5 text-base z-10">{description}</p>
+    <div className="flex flex-col justify-between w-1/2 h-full">
+      <div className="flex flex-col flex-1">
+        <h5 className="mb-4 text-[32px] leading-[36px] font-medium">{name}</h5>
+        <p className="mb-5 text-base z-10">{description}</p>
+      </div>
+
       <button
         type="button"
         className="bg-white font-medium rounded-2xl text-sm px-5 py-2.5 text-center z-10 transition duration-300 ease-in-out hover:bg-[#89DB7B] hover:shadow-lg"
@@ -33,7 +38,7 @@ const TreatmentCard = ({ index, name, description, image }) => (
       </div>
     </div>
   </div>
-);
+)};
 
 const Treatments = () => (
   <div className="flex flex-col gap-10" id="services">
@@ -41,7 +46,7 @@ const Treatments = () => (
       <p className="text-[20px] text-[#89DB7B] font-semibold">
         Satisfy Solution
       </p>
-      <h2 className="text-[36px] font-semibold"> The Best Dental Treatment </h2>
+      <h2 className="text-[36px] font-semibold"> Лучшая забота о детях  </h2>
     </div>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto">

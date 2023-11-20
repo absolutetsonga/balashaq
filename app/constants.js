@@ -24,61 +24,37 @@ export const features = [
 
 export const services = [
   {
-    name: "Teeth Whitening",
-    description: "Cosmetic treatment to enhance the whiteness of teeth",
+    name: "Календарь развития",
+    description:
+      "Отслеживайте этапы развития вашего ребенка с помощью нашего персонализированного календаря.",
     image: "/treatments/treatment-card-1.svg",
   },
   {
-    name: "Dental Implant",
-    description: "Surgical placement of artificial tooth roots",
+    name: "Отслеживание",
+    description: "Записывайте успехи своего ребенка по мере их достижения.",
     image: "/treatments/treatment-card-2.svg",
   },
   {
-    name: "Teeth Whitening",
-    description: "Cosmetic treatment to enhance the whiteness of teeth",
+    name: "Отслеживание Прогресса",
+    description:
+      "Получите представление о динамике развития вашего ребенка с течением времени.",
     image: "/treatments/treatment-card-1.svg",
   },
   {
-    name: "Teeth Whitening",
-    description: "Cosmetic treatment to enhance the whiteness of teeth",
+    name: "Поддержка Родителей",
+    description: "Получите советы и рекомендации на каждом этапе развития.",
     image: "/treatments/treatment-card-1.svg",
   },
   {
-    name: "Teeth Whitening",
-    description: "Cosmetic treatment to enhance the whiteness of teeth",
+    name: "Родительское Сообщество",
+    description:
+      "Общайтесь с сообществом , делитесь опытом и оказывайте  поддержку.",
     image: "/treatments/treatment-card-1.svg",
   },
   {
-    name: "Teeth Whitening",
-    description: "Cosmetic treatment to enhance the whiteness of teeth",
+    name: "Оповещения об изменениях",
+    description:
+      "Будьте в курсе событий с помощью оповещений, созданных искусственным интеллектом",
     image: "/treatments/treatment-card-1.svg",
-  },
-];
-
-export const chooseUs = [
-  {
-    title: "Инновационные Технологии",
-    description:
-      "передовые  технологии, обеспечивающие здоровое развитие вашего малыша.",
-  },
-  {
-    title: "Инновационные Технологии",
-    description:
-      "передовые  технологии, обеспечивающие здоровое развитие вашего малыша.",
-  },
-  {
-    title: "Инновационные Технологии",
-    description:
-      "передовые  технологии, обеспечивающие здоровое развитие вашего малыша.",
-  },
-  {
-    title: "Инновационные Технологии",
-    description:
-      "передовые  технологии, обеспечивающие здоровое развитие вашего малыша.",
-  },
-  {
-    title: "Инновационные Технологии",
-    description:
-      "передовые  технологии, обеспечивающие здоровое развитие вашего малыша.",
   },
 ];
