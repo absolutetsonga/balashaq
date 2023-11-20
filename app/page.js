@@ -4,7 +4,6 @@ import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import Treatments from "./components/Treatments";
 import About from "./components/About";
-import Choose from "./components/Choose";
 import Form from "./components/Form";
 import { useState } from "react";
 
@@ -20,7 +19,6 @@ export default function Home() {
           <Hero />
           <Treatments />
           <About />
-          <Choose />
           <Form setResponse={setResponse} setClose={setClose}/>
         </div>
       </div>

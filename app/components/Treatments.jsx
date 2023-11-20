@@ -36,7 +36,7 @@ const TreatmentCard = ({ index, name, description, image }) => (
 );
 
 const Treatments = () => (
-  <div className="flex flex-col gap-10">
+  <div className="flex flex-col gap-10" id="services">
     <div className="flex flex-col items-center justfiy-center gap-4">
       <p className="text-[20px] text-[#89DB7B] font-semibold">
         Satisfy Solution

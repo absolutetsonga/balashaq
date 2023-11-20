@@ -4,7 +4,7 @@ import Button from './Button';
 
 const About = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row">
+    <div className="flex flex-col-reverse md:flex-row-reverse" id="about-us">
       <div className="w-full md:w-1/2">
         <Image
           src="/about-bg-1.svg"
